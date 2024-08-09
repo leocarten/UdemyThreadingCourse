@@ -1,0 +1,6 @@
+- Tasks are created from the available threadpool
+- there is different syntax, like:
+	new Task(function), t.Start();
+	Task.Factory.StartNew(function)
+- you can return stuff from Tasks
+- you can cancel Tasks using Tokens

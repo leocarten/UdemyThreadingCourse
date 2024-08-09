@@ -8,7 +8,7 @@ namespace UdemyThreadingCourse.Tasks
 {
     class Practice
     {
-        static void Main(string[] args)
+        static void Main_(string[] args)
         {
             var task1 = new Task<int>(() =>
             {

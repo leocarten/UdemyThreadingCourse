@@ -1,0 +1,23 @@
+- How you control access to data when multiple threads try to read and write to something
+- A Critical section is where something is controlled by a lock
+- Atomicity -> An operation is atomic IF it cannot be interrupeted
+- you can use the syntax of:
+lock (yourLock)
+{
+	doYourOperation();
+}
+- what the above does it, obtains the lock (waits if nesesary), does the operation safetly, and then releases the lock
+
+- a mutex is a way to create mutual exlcusion (1 thing gets access)
+
+- a Read-Write lock is a "smarter" type of reading and writing lock
+
+- Summary:
+	- we can Lock() things
+	- we can Mutex() things
+		- need to open and then release mutexs
+		- WaitOne() to acquire 
+		- ReleaseMutex() to release
+		- Mutex.WaitAll() to acquire all Mutexs
+	- C# and the .NET framework provide high-level abstraction and allow you to easy create Tasks, lock things, wait for locks, and so on
+	- Reader-Writer locks are locks that can be used to lock things to read and write (update) something
