@@ -1,0 +1,16 @@
+- Concurrency is like having a single chef in the kitchen that can do multiple things at once (cook chicken while also boiling the noodles)
+- Parallelism is like have 2 chefs in the kitchen, 1 to cook chicken, 1 to boil the noodles
+
+- Concurrent collections have built in methods that help with concurrency because sometimes you dont know which thread or task is going to access the data first
+	- in C#, there are concurrent Stacks, Dictionaries, Queues
+
+- Concurrent collections are thread safe!!
+
+- the blockingCollection is a way to block a thread, or threads, based on some condition 
+	- in the code, i had a max number of messages of 10, so if we try to add more, that thread gets blocked
+
+
+Summary:
+	- Concurrent collections have TryXXX() methods where you can TRY something (thread safe)
+	- These collections are optimized for multiple threads
+	- the blockingCollection is a way to block a thread with some logic

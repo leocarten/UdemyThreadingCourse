@@ -35,7 +35,7 @@ namespace UdemyThreadingCourse.DataSharingAndSynchronization
     }
     class ProgramDriver
     {
-        static void Main(string[] args)
+        static void Main_(string[] args)
         {
             var car = new DriveCar();
             var tasks = new List<Task>(); // create a list of tasks
