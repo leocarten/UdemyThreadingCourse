@@ -1,0 +1,9 @@
+- Task.ContinueWith(t -> {...}) is a way to continue a task after is has finished doing somethig
+	- you can create a chain-like event structure to continue stuff when something has finished
+
+- Using continuations can help you do things concurrently, but in some type of sequential order
+
+- You can create nested Tasks to have a Parent/Child relationship. 
+	- using the TaskCreationOptions.AttachedToParent syntax, you can attach the nested task to the parent task, and if you wait on the parent task, you automatically wait on the child task
+	- you can also create a chaining event by continuing with the child
+

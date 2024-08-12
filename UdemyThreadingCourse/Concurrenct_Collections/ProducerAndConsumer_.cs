@@ -38,7 +38,7 @@ namespace UdemyThreadingCourse.Concurrenct_Collections
     }
     class ProducerAndConsumerDriver
     {
-        static void Main(string[] args)
+        static void Main_(string[] args)
         {
             ProducerAndConsumer_ driver = new ProducerAndConsumer_();
             CancellationTokenSource cts = new CancellationTokenSource();
