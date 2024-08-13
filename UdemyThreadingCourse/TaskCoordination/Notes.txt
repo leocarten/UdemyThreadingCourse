@@ -7,3 +7,17 @@
 	- using the TaskCreationOptions.AttachedToParent syntax, you can attach the nested task to the parent task, and if you wait on the parent task, you automatically wait on the child task
 	- you can also create a chaining event by continuing with the child
 
+- There are different ways to coordinate HOW and WHEN tasks happen, some things require a certain order take place. For example, think about the AOC problem. I used multiple TASKS, but i needed to wait until the text file was fully read from before i could start the other thread.
+- A semaphore is something you can increase and decrease to allow access to a resource
+
+Summary:
+	- ContinueWith() allows for sequential execution of tasks
+		- Continuations can be conditional -> TaskContiniusationOptions.NotOnFaulted
+	- Child and Parent tasks (nested Tasks)
+		- use things like .AttachedToParent -> starts the parent, and waits for child before finishing
+	- SemaphoreSlim in C# basically has a current count, then then a max count
+		- Wait() decreases it
+		- Release(N) opens up
+		- A semaphore is like a person at the front-door of a restaraunt who tells people (threads) when they may enter when tables (resources) are available
+
+Side note: a primitive is a basic type of data-type or value provided by a progarmming language (like int, char, float, boolean)

@@ -75,7 +75,7 @@ namespace UdemyThreadingCourse.AOC_Practice.ContinuationSkills
 
     class AOC_Driver
     {
-        static void Main(string[] args)
+        static void Main_(string[] args)
         {
 
             var aoc = new AOC("C:/Users/leoth/source/repos/UdemyThreadingCourse/UdemyThreadingCourse/AOC_Practice/ContinuationSkills/input.txt");

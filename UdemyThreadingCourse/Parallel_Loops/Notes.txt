@@ -1,0 +1,6 @@
+- obvoisly, things done in a parallel loop WONT be done in order (because its being done AT the same time)
+
+- you can stop a parallel loop by passing the lambda function a state variable, and then doing something like state.stop();
+
+- Certain things you can do in parallel are things like: Addition, Multiplication, Data Analytics, etc...
+

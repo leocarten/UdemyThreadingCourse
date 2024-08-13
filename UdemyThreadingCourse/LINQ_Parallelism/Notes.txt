@@ -1,0 +1,7 @@
+- LINQ (Language INtegrated Query) is a way to filter for data in C#, kinda...
+- You can parallelize these LINQs as well
+- LINQs are typically single threaded, so C# allows you to parallelize it!
+
+- the syntax XX.AsParallel().XX is a way to perform parallel LINQs
+
+- you can also cancel these LINQs by passing in tokens
