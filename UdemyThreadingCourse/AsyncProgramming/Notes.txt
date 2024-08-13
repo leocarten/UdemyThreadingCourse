@@ -1,0 +1,15 @@
+- Asynchronous programming is like doing things concurrently
+- Synchronous programming is like doing things sequentially, one-by-one
+
+- How to change a synchronous function to async:
+int Calculate(); BECOMES --> Task<int> Calculate();
+and now... we can consume this asynchronous function like so:
+async void Food()
+{
+	int n = await Calculate();
+}
+
+- As i saw earlier, when you do a Sleep(5000); or Delay(5000); ... it blocks the UI thread
+	- when the UI thread gets blocked, then it cant be interacted with (resized, clicked, etc...)
+	- so, you need to perform your computation in a new thread or task to NOT block the UI thread
+
